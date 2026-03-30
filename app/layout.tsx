@@ -1,6 +1,7 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -10,9 +11,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         <main>{children}</main>
 
-        <footer className="footer">
-          <p>© 2026 Payhub-Portal</p>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

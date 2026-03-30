@@ -112,12 +112,35 @@ p {
 =========================== */
 .footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px;
   border-top: 1px solid #ccc;
   background: linear-gradient(90deg, #d9d9d9, #4a4a4a);
   margin-top: 40px;
-  color: #ffffff;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #4a4a4a;          
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.footer-links a:hover {
+  opacity: 0.8;
+}
+
+.footer-links a.active {
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 /* ===========================
