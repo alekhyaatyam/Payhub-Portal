@@ -41,5 +41,13 @@
    /app → All pages (Home, Privacy, Terms, Contact),
    /components → Header, Footer, ContactButton, shared UI,
    globals.css → Unified design system + global styles
+
+9. Mobile Responsiveness -
+   Improved layout for small screens (≤480px):
+   - Fixed header link spacing
+   - Corrected footer alignment
+   - Made images fully responsive
+   - Removed horizontal overflow on mobile
+
    
      
