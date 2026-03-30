@@ -444,10 +444,10 @@ p {
 
   /* Fix header links merging */
   .nav a {
-    display: block;        /* forces each link to its own line */
-    margin: 6px 0;         /* spacing between links */
-    font-size: 1rem;       /* slightly smaller for mobile */
-    text-align: center;    /* center align for clean look */
+    display: block;      
+    margin: 6px 0;         
+    font-size: 1rem;       
+    text-align: center;    
   }
 
   /* Reduce logo size to prevent overflow */
@@ -459,7 +459,7 @@ p {
   .section {
     flex-direction: column;
     text-align: center;
-    margin: 30px 0;        /* reduce spacing for mobile */
+    margin: 30px 0;        
   }
 
   .section-image img {
