@@ -164,3 +164,48 @@ p {
     padding: 40px 16px;
   }
 }
+
+.core-values {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.core-values h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.core-values p {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+/* Base item style */
+.value-item {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #6a1b9a;
+}
+
+/* Positioning */
+.value-item.left {
+  margin-right: auto;
+}
+
+.value-item.right {
+  margin-left: auto;
+}
+
+
+

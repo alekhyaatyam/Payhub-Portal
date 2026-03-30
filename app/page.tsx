@@ -79,15 +79,51 @@ export default function About() {
         </div>
       </div>
 
-      {/* Core Values */}
+    {/* Core Values */}
+    <section className="core-values">
       <h2>Our Core Values</h2>
       <p>These principles guide everything we build:</p>
-      <ul className="list-spaced">
-        <li><strong>Security First:</strong> Protecting user data is our top priority.</li>
-        <li><strong>Simplicity:</strong> Payments should be easy, not complicated.</li>
-        <li><strong>Transparency:</strong> No hidden steps, no confusion.</li>
-        <li><strong>Innovation:</strong> Constantly improving to meet modern needs.</li>
-      </ul>
+      {/* 1 - Left */}
+      <div className="value-item left">
+        <div className="value-icon">🔒</div>
+          <p>
+            <strong>Security First</strong><br />
+              Protecting user data is our top priority.
+          </p>
+      </div>
+      {/* 2 - Right */}
+      <div className="value-item right">
+        <div className="value-icon">✨</div>
+          <p>
+            <strong>Simplicity</strong><br />
+              Payments should be easy, not complicated.
+          </p>
+      </div>
+      {/* 3 - Left */}
+      <div className="value-item left">
+        <div className="value-icon">🔍</div>
+          <p>
+            <strong>Transparency</strong><br />
+              No hidden steps, no confusion.
+          </p>
+      </div>
+      {/* 4 - Right */}
+      <div className="value-item right">
+        <div className="value-icon">🚀</div>
+          <p>
+            <strong>Innovation</strong><br />
+              Constantly improving to meet modern needs.
+          </p>
+      </div>
+      {/* 5 - Center */}
+      <div className="value-item left">
+        <div className="value-icon">🤝</div>
+          <p>
+            <strong>Trust</strong><br />
+              Building long‑term confidence with every interaction.
+          </p>
+      </div>
+    </section>
 
       {/* Why Choose Us */}
       <div className="section-gap">
