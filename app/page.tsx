@@ -80,54 +80,48 @@ export default function About() {
         </div>
       </div>
 
-    {/* Core Values */}
-    <section className="core-values">
-      <h2>Our Core Values</h2>
-      <p>These principles guide everything we build:</p>
-      {/* 1 - Left */}
-      <div className="value-item left">
-        <div className="value-icon">🔒</div>
-          <p>
-            <strong>Security First</strong><br />
-              Protecting user data is our top priority.
-          </p>
-      </div>
-      {/* 2 - Right */}
-      <div className="value-item right">
-        <div className="value-icon">✨</div>
-          <p>
-            <strong>Simplicity</strong><br />
-              Payments should be easy, not complicated.
-          </p>
-      </div>
-      {/* 3 - Left */}
-      <div className="value-item left">
-        <div className="value-icon">🔍</div>
-          <p>
-            <strong>Transparency</strong><br />
-              No hidden steps, no confusion.
-          </p>
-      </div>
-      {/* 4 - Right */}
-      <div className="value-item right">
-        <div className="value-icon">🚀</div>
-          <p>
-            <strong>Innovation</strong><br />
-              Constantly improving to meet modern needs.
-          </p>
-      </div>
-      {/* 5 - Center */}
-      <div className="value-item left">
-        <div className="value-icon">🤝</div>
-          <p>
-            <strong>Trust</strong><br />
-              Building long‑term confidence with every interaction.
-          </p>
+      {/* Core Values */}
+      <section className="info-section">
+      <h2 className="info-title">Our Core Values</h2>
+      <p className="info-subtitle">These principles guide everything we build:</p>
+
+      <div className="info-grid">
+
+        <div className="info-card">
+          <div className="info-icon">🔒</div>
+          <h3 className="info-card-title">Security First</h3>
+          <p className="info-card-text">Protecting user data is our top priority.</p>
+        </div>
+
+        <div className="info-card">
+          <div className="info-icon">✨</div>
+          <h3 className="info-card-title">Simplicity</h3>
+          <p className="info-card-text">Payments should be easy, not complicated.</p>
+        </div>
+
+        <div className="info-card">
+          <div className="info-icon">🔍</div>
+          <h3 className="info-card-title">Transparency</h3>
+          <p className="info-card-text">No hidden steps, no confusion.</p>
+        </div>
+
+        <div className="info-card">
+          <div className="info-icon">🚀</div>
+          <h3 className="info-card-title">Innovation</h3>
+          <p className="info-card-text">Constantly improving to meet modern needs.</p>
+        </div>
+
+        <div className="info-card">
+          <div className="info-icon">🤝</div>
+          <h3 className="info-card-title">Trust</h3>
+          <p className="info-card-text">Building long‑term confidence with every interaction.</p>
+        </div>
       </div>
     </section>
 
+
       {/* Why Choose Us */}
-      <div className="section-gap">
+      <div className="section-inner">
         <h2>Why Choose Payhub-Portal?</h2>
         <p>
           We combine modern technology with a clean, intuitive interface to make
@@ -135,7 +129,7 @@ export default function About() {
           reliability, and peace of mind.
         </p>
         <ContactButton />
-      </div>
+        </div>
     </div>
   );
 }

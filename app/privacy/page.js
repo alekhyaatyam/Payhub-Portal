@@ -57,51 +57,51 @@ export default function Privacy() {
       </div>
 
       {/* Summary Section */}
-      <section className="privacy-summary-boxes">
-      <h2>Summary of Key Points</h2>
-      <p className="summary-intro">
+      <section className="info-section">
+      <h2 className="info-title">Summary of Key Points</h2>
+      <p className="info-subtitle">
         This summary provides a quick overview of how we handle your data.  
         For full details, please read the complete Privacy Notice below.
       </p>
 
-      <div className="summary-grid">
+      <div className="info-grid">
 
-        <div className="summary-box">
-          <div className="summary-icon">📥</div>
-          <h3>Information We Collect</h3>
-          <p>
+        <div className="info-card">
+          <div className="info-icon">📥</div>
+          <h3 className="info-card-title">Information We Collect</h3>
+          <p  className="info-card-text">
             We collect information you provide directly and data generated through your use of our platform.
           </p>
         </div>
 
-        <div className="summary-box">
-          <div className="summary-icon">⚙️</div>
-          <h3>How We Use Your Data</h3>
-          <p>
+        <div className="info-card">
+          <div className="info-icon">⚙️</div>
+          <h3  className="info-card-title">How We Use Your Data</h3>
+          <p className="info-card-text"> 
             Your data is used to operate, improve, and secure our services.
           </p>
         </div>
 
-        <div className="summary-box">
-          <div className="summary-icon">🔐</div>
-          <h3>How We Protect Your Data</h3>
-          <p>
+        <div className="info-card">
+          <div className="info-icon">🔐</div>
+          <h3  className="info-card-title">How We Protect Your Data</h3>
+          <p className="info-card-text">
             We implement strong security measures to protect your information.
           </p>
         </div>
 
-        <div className="summary-box">
-          <div className="summary-icon">🧾</div>
-          <h3>Your Privacy Rights</h3>
-          <p>
+        <div className="info-card">
+          <div className="info-icon">🧾</div>
+          <h3 className="info-card-title">Your Privacy Rights</h3>
+          <p className="info-card-text">
             You may have rights to access, update, or delete your data depending on your location.
           </p>
         </div>
 
-        <div className="summary-box">
-          <div className="summary-icon">📩</div>
-          <h3>Contact Us</h3>
-          <p>
+        <div className="info-card">
+          <div className="info-icon">📩</div>
+          <h3 className="info-card-title">Contact Us</h3>
+          <p className="info-card-text"> 
             If you have any questions about this Privacy Notice or how your data is handled,  
             feel free to reach out to us anytime at:
           </p>

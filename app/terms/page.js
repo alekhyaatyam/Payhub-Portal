@@ -52,76 +52,81 @@ export default function Terms() {
         </div>
       </div>
 
-      <h2 className="terms-header">Summary of Terms</h2>
-      <p className="terms-intro">
+      <section className="info-section">
+      <h2 className="info-title">Summary of Terms</h2>
+      <p className="info-subtitle">
         This summary provides a simplified overview of the key rules and expectations 
         when using Payhub‑Portal. For full legal details, please review the complete Terms of Service below.
       </p>
-      <section className="terms-boxes">
-      <div className="terms-box">
-        <div className="terms-icon">🛠️</div>
-        <h3>Use of Services</h3>
-        <p>
-          You must use Payhub‑Portal responsibly and follow all applicable laws.  
-          Activities like fraud, unauthorized access, or disrupting the platform are not allowed.
-        </p>
-      </div>
 
-      <div className="terms-box">
-        <div className="terms-icon">👤</div>
-        <h3>User Responsibilities</h3>
-        <p>
-          You are responsible for providing accurate information, keeping your account secure,  
-          and notifying us if you suspect unauthorized activity.
-        </p>
-      </div>
+      <div className="info-grid">
 
-      <div className="terms-box">
-        <div className="terms-icon">⚠️</div>
-        <h3>Limitation of Liability</h3>
-        <p>
-          While we work to keep the platform secure, we are not liable for indirect damages,  
-          data loss, or issues caused by third‑party services.
-        </p>
-      </div>
+        <div className="info-card">
+          <div className="info-icon">🛠️</div>
+          <h3 className="info-card-title">Use of Services</h3>
+          <p className="info-card-text">
+            You must use Payhub‑Portal responsibly and follow all applicable laws.  
+            Activities like fraud, unauthorized access, or disrupting the platform are not allowed.
+          </p>
+        </div>
 
-      <div className="terms-box">
-        <div className="terms-icon">🔄</div>
-        <h3>Changes to Terms</h3>
-        <p>
-          We may update these terms as our services evolve.  
-          Continued use of the platform means you accept any changes.
-        </p>
-      </div>
+        <div className="info-card">
+          <div className="info-icon">👤</div>
+          <h3 className="info-card-title">User Responsibilities</h3>
+          <p className="info-card-text">
+            You are responsible for providing accurate information, keeping your account secure,  
+            and notifying us if you suspect unauthorized activity.
+          </p>
+        </div>
 
-      <div className="terms-box">
-        <div className="terms-icon">⛔</div>
-        <h3>Termination of Access</h3>
-        <p>
-          We may suspend or terminate your account if you violate these terms  
-          or engage in harmful or unlawful activity.
-        </p>
-      </div>
+        <div className="info-card">
+          <div className="info-icon">⚠️</div>
+          <h3 className="info-card-title">Limitation of Liability</h3>
+          <p className="info-card-text">
+            While we work to keep the platform secure, we are not liable for indirect damages,  
+            data loss, or issues caused by third‑party services.
+          </p>
+        </div>
 
-      <div className="terms-box">
-        <div className="terms-icon">🔗</div>
-        <h3>Third‑Party Services</h3>
-        <p>
-          Some features rely on third‑party tools.  
-          We are not responsible for their content, policies, or performance.
-        </p>
-      </div>
+        <div className="info-card">
+          <div className="info-icon">🔄</div>
+          <h3 className="info-card-title">Changes to Terms</h3>
+          <p className="info-card-text">
+            We may update these terms as our services evolve.  
+            Continued use of the platform means you accept any changes.
+          </p>
+        </div>
 
-      <div className="terms-box">
-        <div className="terms-icon">📩</div>
-        <h3>Contact Us</h3>
-        <p>
-          For questions or support, reach out anytime.
-        </p>
-        <ContactButton />
-      </div>
+        <div className="info-card">
+          <div className="info-icon">⛔</div>
+          <h3 className="info-card-title">Termination of Access</h3>
+          <p className="info-card-text">
+            We may suspend or terminate your account if you violate these terms  
+            or engage in harmful or unlawful activity.
+          </p>
+        </div>
 
+        <div className="info-card">
+          <div className="info-icon">🔗</div>
+          <h3 className="info-card-title">Third‑Party Services</h3>
+          <p className="info-card-text">
+            Some features rely on third‑party tools.  
+            We are not responsible for their content, policies, or performance.
+          </p>
+        </div>
+
+        <div className="info-card">
+          <div className="info-icon">📩</div>
+          <h3 className="info-card-title">Contact Us</h3>
+          <p className="info-card-text">
+            For questions or support, reach out anytime.
+          </p>
+          <ContactButton />
+        </div>
+
+      </div>
     </section>
+
 
       {/* FAQ Section */}
       <FAQ title="Frequently Asked Questions (FAQ)" items={termsFaqs} />

@@ -63,11 +63,6 @@ p {
   border-radius: 10px;
 }
 
-/* Extra spacing for standalone sections */
-.section-gap {
-  margin-top: 100px;
-}
-
 /* List spacing */
 .list-spaced li {
   margin-bottom: 12px;
@@ -111,24 +106,36 @@ p {
    FOOTER
 =========================== */
 .footer {
-  text-align: center;
   padding: 30px 20px;
   border-top: 1px solid #ccc;
-  background: linear-gradient(90deg, #d9d9d9, #4a4a4a);
+  background: #888585;
   margin-top: 40px;
   font-weight: 700;
   font-size: 20px;
+}
+
+/* Layout container */
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LEFT SIDE — Navigation links */
+.footer-left {
+  text-align: left;
 }
 
 .footer-links {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-bottom: 20px;
 }
 
 .footer-links a {
-  color: #4a4a4a;          
+  color: #ccc;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
@@ -142,6 +149,38 @@ p {
   text-decoration: underline;
   font-weight: 700;
 }
+
+/* CENTER CONTENT */
+.footer-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* Right side container */
+.footer-right {
+  display: flex;            /* Align items horizontally */
+  gap: 15px;                /* Space between each link */
+  align-items: center;      /* Vertically center the links */
+}
+
+/* Style for each social link */
+.footer-right a {
+  font-size: 1.1rem;        /* Text size */
+  font-weight: 600;         /* Bold text */
+  color: #ccc;              /* White text (matches footer theme) */
+  text-decoration: none;    /* Remove underline */
+  transition: 0.3s ease;    /* Smooth hover animation */
+}
+
+/* Hover effect */
+.footer-right a:hover {
+  opacity: 0.7;             /* Slight fade on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+
 
 /* ===========================
    RESPONSIVE DESIGN
@@ -165,46 +204,14 @@ p {
   }
 }
 
-/* Revamped core values section */
-.core-values {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 20px;
-}
 
-.core-values h2 {
+.section-inner h2,
+.section-inner p {
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-.core-values p {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 1.1rem;
-}
-
-.value-item {
-  width: 100%;
-  max-width: 400px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.value-icon {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #6a1b9a;
-}
-
-.value-item.left {
+  margin-left: auto;
   margin-right: auto;
 }
 
-.value-item.right {
-  margin-left: auto;
-}
 
 /* updated FAQ section */
 .faq-section {
@@ -269,33 +276,37 @@ p {
   line-height: 1.6;
 }
 
-/*privacy summary content styling*/
-.privacy-summary-boxes {
+/* same for all the pages box format styling */
+/* SECTION WRAPPER */
+.info-section {
   max-width: 1000px;
   margin: 60px auto;
   padding: 20px;
   text-align: center;
 }
 
-.privacy-summary-boxes h2 {
+/* TITLE + SUBTITLE */
+.info-title {
   font-size: 2rem;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
-.summary-intro {
+.info-subtitle {
   font-size: 1.1rem;
   margin-bottom: 40px;
   color: #555;
 }
 
-.summary-grid {
+/* GRID LAYOUT */
+.info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
 
-.summary-box {
+/* CARD */
+.info-card {
   background: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 12px;
@@ -304,98 +315,33 @@ p {
   transition: all 0.3s ease;
 }
 
-.summary-box:hover {
+.info-card:hover {
   border-color: #6a1b9a;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
   transform: translateY(-3px);
 }
 
-.summary-icon {
+/* ICON */
+.info-icon {
   font-size: 2.5rem;
   margin-bottom: 15px;
   color: #6a1b9a;
 }
 
-.summary-box h3 {
+/* CARD TITLE */
+.info-card-title {
   font-size: 1.25rem;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
-.summary-box p {
+/* CARD TEXT */
+.info-card-text {
   font-size: 1rem;
   color: #555;
   line-height: 1.5;
 }
 
-/*terms content summary styling */
-.terms-header {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.terms-intro {
-  max-width: 800px;
-  margin: 0 auto 40px;
-  text-align: center;
-  font-size: 1.1rem;
-  color: #555;
-  line-height: 1.6;
-}
-
-.terms-boxes {
-  max-width: 1000px;
-  margin: 60px auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.terms-box {
-  background: #ffffff;
-  border: 1px solid #e5e5e5;
-  border-radius: 12px;
-  padding: 25px 20px;
-  transition: all 0.3s ease;
-}
-
-.terms-box:hover {
-  border-color: #6a1b9a;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-  transform: translateY(-3px);
-}
-
-.terms-icon {
-  font-size: 2.4rem;
-  margin-bottom: 15px;
-  color: #6a1b9a;
-  text-align: center;
-}
-
-.terms-box h3 {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.terms-box p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
-}
-
-.terms-box ul {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-.terms-box ul li {
-  margin-bottom: 8px;
-  color: #444;
-}
 
 /* Button styling */
 .contact-page {
