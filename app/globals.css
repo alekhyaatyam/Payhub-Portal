@@ -121,6 +121,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 /* LEFT SIDE — Navigation links */
@@ -160,27 +161,25 @@ p {
 
 /* Right side container */
 .footer-right {
-  display: flex;            /* Align items horizontally */
-  gap: 15px;                /* Space between each link */
-  align-items: center;      /* Vertically center the links */
+  display: flex;
+  gap: 15px;
+  align-items: center;
 }
 
 /* Style for each social link */
 .footer-right a {
-  font-size: 1.1rem;        /* Text size */
-  font-weight: 600;         /* Bold text */
-  color: #ccc;              /* White text (matches footer theme) */
-  text-decoration: none;    /* Remove underline */
-  transition: 0.3s ease;    /* Smooth hover animation */
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
 /* Hover effect */
 .footer-right a:hover {
-  opacity: 0.7;             /* Slight fade on hover */
-  transform: translateY(-2px); /* Lift effect */
+  opacity: 0.7;
+  transform: translateY(-2px);
 }
-
-
 
 /* ===========================
    RESPONSIVE DESIGN
@@ -204,7 +203,6 @@ p {
   }
 }
 
-
 .section-inner h2,
 .section-inner p {
   text-align: center;
@@ -212,8 +210,7 @@ p {
   margin-right: auto;
 }
 
-
-/* updated FAQ section */
+/* FAQ section */
 .faq-section {
   max-width: 800px;
   margin: 60px auto;
@@ -276,8 +273,7 @@ p {
   line-height: 1.6;
 }
 
-/* same for all the pages box format styling */
-/* SECTION WRAPPER */
+/* Info section */
 .info-section {
   max-width: 1000px;
   margin: 60px auto;
@@ -285,7 +281,6 @@ p {
   text-align: center;
 }
 
-/* TITLE + SUBTITLE */
 .info-title {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -298,14 +293,12 @@ p {
   color: #555;
 }
 
-/* GRID LAYOUT */
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
 
-/* CARD */
 .info-card {
   background: #ffffff;
   border: 1px solid #e5e5e5;
@@ -321,29 +314,25 @@ p {
   transform: translateY(-3px);
 }
 
-/* ICON */
 .info-icon {
   font-size: 2.5rem;
   margin-bottom: 15px;
   color: #6a1b9a;
 }
 
-/* CARD TITLE */
 .info-card-title {
   font-size: 1.25rem;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
-/* CARD TEXT */
 .info-card-text {
   font-size: 1rem;
   color: #555;
   line-height: 1.5;
 }
 
-
-/* Button styling */
+/* Contact page */
 .contact-page {
   max-width: 800px;
   margin: 60px auto;
@@ -416,3 +405,80 @@ p {
   transform: translateY(-3px);
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
+
+/* ===========================
+   NEW MOBILE FIXES (IMPORTANT)
+=========================== */
+@media (max-width: 480px) {
+
+  /* Prevent horizontal overflow (fixes unwanted scrollbars) */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* Fix footer layout */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-center {
+    position: static;
+    transform: none;
+  }
+
+  .footer-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  /* Fix nav spacing + prevent text merging */
+  .nav {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 0;
+    height: auto;
+  }
+
+  /* Fix header links merging */
+  .nav a {
+    display: block;        /* forces each link to its own line */
+    margin: 6px 0;         /* spacing between links */
+    font-size: 1rem;       /* slightly smaller for mobile */
+    text-align: center;    /* center align for clean look */
+  }
+
+  /* Reduce logo size to prevent overflow */
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  /* Fix section layout */
+  .section {
+    flex-direction: column;
+    text-align: center;
+    margin: 30px 0;        /* reduce spacing for mobile */
+  }
+
+  .section-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Reduce padding */
+  .container {
+    padding: 20px 12px;
+  }
+
+  /* Fix text sizes */
+  h1, h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
