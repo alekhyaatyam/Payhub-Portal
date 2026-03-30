@@ -11,6 +11,7 @@ export default function Footer() {
         <a href="/" className={pathname === "/" ? "active" : ""}>Home</a>
         <a href="/privacy" className={pathname === "/privacy" ? "active" : ""}>Privacy</a>
         <a href="/terms" className={pathname === "/terms" ? "active" : ""}>Terms</a>
+        <a href="/contact" className={pathname === "/contact" ? "active" : ""}>Contact</a>
       </div>
 
       <p>© 2026 Payhub-Portal</p>

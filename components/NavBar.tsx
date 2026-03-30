@@ -13,6 +13,7 @@ export default function NavBar() {
         <Link href="/" className={pathname === "/" ? "active" : ""}>Home</Link>
         <Link href="/privacy" className={pathname === "/privacy" ? "active" : ""}>Privacy</Link>
         <Link href="/terms" className={pathname === "/terms" ? "active" : ""}>Terms</Link>
+        <Link href="/contact" className={pathname === "/contact" ? "active" : ""}>Contact</Link>
       </div>
     </nav>
   );

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { images } from "@/lib/images";
 import FAQ from "@/components/FAQ";
+import ContactButton from "@/components/ContactButton";
 
 export default function Terms() {
   const termsFaqs = [
@@ -115,9 +116,9 @@ export default function Terms() {
         <div className="terms-icon">📩</div>
         <h3>Contact Us</h3>
         <p>
-          For questions or support, reach out anytime at  
-          <strong> support@payhub.com</strong>.
+          For questions or support, reach out anytime.
         </p>
+        <ContactButton />
       </div>
 
     </section>

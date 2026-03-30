@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { images } from "@/lib/images";
+import ContactButton from "@/components/ContactButton";
 
 export default function About() {
   return (
@@ -133,6 +134,7 @@ export default function About() {
           digital payments accessible to everyone. Our platform is built for speed,
           reliability, and peace of mind.
         </p>
+        <ContactButton />
       </div>
     </div>
   );

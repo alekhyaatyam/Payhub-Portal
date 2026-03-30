@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { images } from "@/lib/images";
 import FAQ from "@/components/FAQ";
+import ContactButton from "@/components/ContactButton";
 
 export default function Privacy() {
   const privacyFaqs = [
@@ -104,7 +105,7 @@ export default function Privacy() {
             If you have any questions about this Privacy Notice or how your data is handled,  
             feel free to reach out to us anytime at:
           </p>
-          <p><strong>support@payhub.com</strong></p>
+          <ContactButton />
       </div>
       </div>
     </section>
