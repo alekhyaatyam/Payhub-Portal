@@ -1,7 +1,31 @@
 import Image from "next/image";
 import { images } from "@/lib/images";
+import FAQ from "@/components/FAQ";
 
 export default function Terms() {
+  const termsFaqs = [
+    {
+      q: "Can my account be suspended?",
+      a: "Yes. Accounts may be suspended if they violate our terms, engage in fraudulent activity, or pose a security risk."
+    },
+    {
+      q: "Can I dispute a suspension?",
+      a: "Absolutely. You can contact our support team to request a review of your account status."
+    },
+    {
+      q: "Are these terms legally binding?",
+      a: "Yes. By using Payhub-Portal, you agree to comply with these legally binding terms."
+    },
+    {
+      q: "Will I be notified of major changes?",
+      a: "Yes. Significant updates to our terms will be communicated through the platform or via email when appropriate."
+    },
+    {
+      q: "What happens if I disagree with the updated terms?",
+      a: "If you do not agree with the updated terms, you must stop using the platform. Continued use indicates acceptance."
+    }
+  ];
+
   return (
     <div className="container">
       {/* Terms of Service */}
@@ -27,113 +51,79 @@ export default function Terms() {
         </div>
       </div>
 
-      <h2>1. Use of Services</h2>
-      <p>
-        You agree to use our platform only for lawful purposes and in compliance
-        with all applicable laws and regulations. You must not:
+      <h2 className="terms-header">Summary of Terms</h2>
+      <p className="terms-intro">
+        This summary provides a simplified overview of the key rules and expectations 
+        when using Payhub‑Portal. For full legal details, please review the complete Terms of Service below.
       </p>
-      <ul className="list-spaced">
-        <li>Engage in fraudulent or unauthorized transactions.</li>
-        <li>Attempt to access restricted areas of the platform.</li>
-        <li>Interfere with the security or performance of our services.</li>
-        <li>Use the platform in a way that harms other users or our systems.</li>
-      </ul>
-
-      <h2>2. User Responsibilities</h2>
-      <p>As a user of Payhub-Portal, you are responsible for:</p>
-      <ul className="list-spaced">
-        <li>Providing accurate and up-to-date information when creating an account.</li>
-        <li>Maintaining the confidentiality of your login credentials.</li>
-        <li>Notifying us immediately if you suspect unauthorized access.</li>
-        <li>Ensuring that your use of the platform complies with these terms.</li>
-      </ul>
-
-      <h2>3. Limitation of Liability</h2>
-      <p>
-        While we strive to provide a secure and reliable platform, Payhub-Portal
-        is not liable for:
-      </p>
-      <ul className="list-spaced">
-        <li>Indirect, incidental, or consequential damages.</li>
-        <li>Loss of data, revenue, or business opportunities.</li>
-        <li>Issues caused by third-party services or external systems.</li>
-        <li>Unauthorized access resulting from user negligence.</li>
-      </ul>
-      <p>
-        Our platform is provided on an “as-is” and “as-available” basis, without
-        warranties of any kind unless required by law.
-      </p>
-
-      <h2>4. Changes to Terms</h2>
-      <p>
-        We may update these Terms of Service from time to time to reflect
-        changes in our platform, legal requirements, or business practices. When
-        updates occur:
-      </p>
-      <ul className="list-spaced">
-        <li>We will revise the “Last updated” date at the top of this page.</li>
-        <li>Continued use of the platform means you accept the updated terms.</li>
-        <li>You are encouraged to review this page periodically.</li>
-      </ul>
-
-      <h2>5. Termination of Access</h2>
-      <p>
-        We reserve the right to suspend or terminate your access to the platform
-        if you violate these terms or engage in harmful or unlawful activity.
-        Termination may occur without prior notice in cases of severe misuse.
-      </p>
-
-      <h2>6. Third-Party Services</h2>
-      <p>
-        Our platform may integrate with third-party tools or services. We are
-        not responsible for:
-      </p>
-      <ul className="list-spaced">
-        <li>The content, policies, or performance of third-party providers.</li>
-        <li>Any issues arising from your use of external services.</li>
-      </ul>
-
-      <h2>7. Contact Us</h2>
-      <p>
-        If you have any questions about these Terms of Service or need support,
-        please reach out to us at:
-      </p>
-      <p><strong>support@payhub.com</strong></p>
-
-      {/* FAQ Section */}
-      <div className="section-gap">
-        <h2>Frequently Asked Questions (FAQ)</h2>
-
-        <h3>1. Can my account be suspended?</h3>
+      <section className="terms-boxes">
+      <div className="terms-box">
+        <div className="terms-icon">🛠️</div>
+        <h3>Use of Services</h3>
         <p>
-          Yes. Accounts may be suspended if they violate our terms, engage in
-          fraudulent activity, or pose a security risk.
-        </p>
-
-        <h3>2. Can I dispute a suspension?</h3>
-        <p>
-          Absolutely. You can contact our support team to request a review of
-          your account status.
-        </p>
-
-        <h3>3. Are these terms legally binding?</h3>
-        <p>
-          Yes. By using Payhub-Portal, you agree to comply with these legally
-          binding terms.
-        </p>
-
-        <h3>4. Will I be notified of major changes?</h3>
-        <p>
-          Yes. Significant updates to our terms will be communicated through the
-          platform or via email when appropriate.
-        </p>
-
-        <h3>5. What happens if I disagree with the updated terms?</h3>
-        <p>
-          If you do not agree with the updated terms, you must stop using the
-          platform. Continued use indicates acceptance.
+          You must use Payhub‑Portal responsibly and follow all applicable laws.  
+          Activities like fraud, unauthorized access, or disrupting the platform are not allowed.
         </p>
       </div>
+
+      <div className="terms-box">
+        <div className="terms-icon">👤</div>
+        <h3>User Responsibilities</h3>
+        <p>
+          You are responsible for providing accurate information, keeping your account secure,  
+          and notifying us if you suspect unauthorized activity.
+        </p>
+      </div>
+
+      <div className="terms-box">
+        <div className="terms-icon">⚠️</div>
+        <h3>Limitation of Liability</h3>
+        <p>
+          While we work to keep the platform secure, we are not liable for indirect damages,  
+          data loss, or issues caused by third‑party services.
+        </p>
+      </div>
+
+      <div className="terms-box">
+        <div className="terms-icon">🔄</div>
+        <h3>Changes to Terms</h3>
+        <p>
+          We may update these terms as our services evolve.  
+          Continued use of the platform means you accept any changes.
+        </p>
+      </div>
+
+      <div className="terms-box">
+        <div className="terms-icon">⛔</div>
+        <h3>Termination of Access</h3>
+        <p>
+          We may suspend or terminate your account if you violate these terms  
+          or engage in harmful or unlawful activity.
+        </p>
+      </div>
+
+      <div className="terms-box">
+        <div className="terms-icon">🔗</div>
+        <h3>Third‑Party Services</h3>
+        <p>
+          Some features rely on third‑party tools.  
+          We are not responsible for their content, policies, or performance.
+        </p>
+      </div>
+
+      <div className="terms-box">
+        <div className="terms-icon">📩</div>
+        <h3>Contact Us</h3>
+        <p>
+          For questions or support, reach out anytime at  
+          <strong> support@payhub.com</strong>.
+        </p>
+      </div>
+
+    </section>
+
+      {/* FAQ Section */}
+      <FAQ title="Frequently Asked Questions (FAQ)" items={termsFaqs} />
     </div>
   );
 }
